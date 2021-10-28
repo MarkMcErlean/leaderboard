@@ -1,22 +1,110 @@
-@charset "UTF-8"; 
- 
-h1,h2,h3,h4,h5,h6 {
-margin: 0.6em 0;
-font-family: Tahoma, Arial, Helvetica, sans-serif; 
+.nav {
+  float: left;
+  list-style: none;
+  text-align: left;
+  overflow: hidden;
+  margin: 5px;
+}
+.container {
+  padding: 15px;
+  background-color: white;
+  border: 1px;
+  border-color: #212529;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  /*border-radius: 5px;*/
+}
+.nav-link.active {
+  color: blueviolet;
+}
+.dropdown-item {
+  color: #6441a5;
+}
+.nav li {
+  display: inline-block;
+  padding: 10px 9px 10px 9px;
+  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  color: blueviolet;
+}
+.nav a:link {
+  color: blueviolet;
+}
+.nav a:visited {
+  color: #6441a5;
+}
+.nav a:hover {
+  color: blueviolet;
+}
+.nav a:active {
+  color: blueviolet;
 }
 
-h1 {font-size: 2.0em; line-height: 0.25} 
-h2 {font-size: 1.625em; line-height: 0.5} 
-h3 {font-size: 1.3125em; line-height: 1.24; color: yellow;} 
-h4 {font-size: 1.1875em; line-height: 1.23} 
-h5,h6 {font-size: 1em; font-weight:italic} 
- 
-body { 
-  background: url("../images/background-min.png"); /*  65% saving on file size */ 
+
+#footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: 1em;
+  width: 100%;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+h1 {
+  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: bold;
+  color: #6441a5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+h3 {
+  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: bold;
+  color: #6441a5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+p{
+  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: blue;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body {
+  background: url("../images/background-min.jpg"); /*  65% saving on file size */ 
   background-repeat: no-repeat; 
   background-attachment: fixed;  
   background-size: cover; 
   margin: 0; 
-} 
-/* Heading Graphic with linear-gradient from: https://cssgradient.io/ */ 
-/* inputs created using: https://www.html-code-generator.com/css/textbox-style */
+}
+
+.record {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+}
