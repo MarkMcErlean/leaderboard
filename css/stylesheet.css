@@ -1,22 +1,13 @@
-.nav {
-  float: left;
-  list-style: none;
-  text-align: left;
-  overflow: hidden;
-  margin: 5px;
-}
 .container {
-  /* padding-left: 550px;
-  padding-top: 10px; */
   padding: 20px;
   text-align: center;
-  
+  min-height: calc(100vh - 50px);
 }
 
 .header{
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
-  background-color: cadetblue ;
-  padding: 15px; 
+  background-color: cadetblue;
+  padding: 15px;
   margin: 0px;
   text-align: center;
   text-decoration: none;
@@ -26,15 +17,26 @@
 }
 
 body {
-  background: url("../images/background-min.jpg"); /*  65% saving on file size */ 
-  background-repeat: no-repeat; 
-  background-attachment: fixed;  
-  background-size: cover; 
-  margin: 0; 
+  background: url("../images/background-min.jpg"); /*  61% of original file size */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
 }
+ul{
+  transform: skewX(10deg);
+}
+
+li{
+  list-style: none;
+  display: inline-flex;
+  padding-left: 10%;
+}
+
 
 .gen_record {
   background-color: cadetblue ;
+  opacity: 0%;
   border: 2px;
   border-style:solid;
   border-radius: 15px;
@@ -50,57 +52,38 @@ body {
   transform: skewX(-10deg);
 }
 
-.first_record{
+
+#first_place{
   background-color:gold; /* Gold */
-  border: 2px;
-  border-style: solid;
-  border-radius: 15px;
-  border-color: black;
-  padding: 15px ;
-  margin: 0 auto;
-  width: 50%;
-  /* text-align: center; */
-  text-decoration: none;
-  display:block ;
-  font-size: 16px; 
-  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif; 
-  transform: skewX(-10deg);
-}
-ul{
-  transform: skewX(10deg);
+  opacity: 0%;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-.second_record{
+
+#second_place{
   background-color: silver; /* silver */
-  border: 2px;
-  border-style: solid ;
-  border-radius: 15px;
-  border-color: black;
-  padding: 15px;
-  margin: 0 auto;
-  width: 50%;
-  /* text-align: center; */
-  text-decoration: none;
-  display:block ;
-  font-size: 16px; 
-  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
-  transform: skewX(-10deg);
+  
 }
 
-.third_record{
+#third_place{
   background-color: #cd7f32; /* Bronze */
-  border: 2px;
-  border-style: solid;
-  border-radius: 15px;
-  border-color: black;
-  padding: 15px;
-  margin: 0 auto;
-  width: 50%;
-  /* text-align: center; */
-  text-decoration: none;
-  display:block ;
-  font-size: 16px; 
-  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
-  transform:skewX(-10deg);
+  
 }
 
+.footer{
+  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: cadetblue;
+  padding: 15px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  display:block; 
+  background-image: linear-gradient(to top right,yellow, cadetblue);
+  height: 100px;
+}
+
+#myForm{
+  /* text-align: center; */
+  font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+}

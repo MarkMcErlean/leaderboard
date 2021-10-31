@@ -11,27 +11,57 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png"> 
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png"> 
         
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="../js/script.js"></script>
     </head>
     <body>
         <div class = 'header'>
             <h1>Leaderboard</h1>
         </div>
         <div class="container">
-            <div class='first_record'>
-                <div class="item"><ul>Brad Bradley</ul></div> <div class="score"><ul>322</ul></div>
+            <div class='gen_record' id="first_place">
+                <ul>
+                    <li class="name">Brad Bradley</li>
+                    <li class="score">322</li>
+                </ul>
             </div> 
-            <div class='second_record'>
-                <div class="item"><ul>James Jameson</ul></div> <div class="score"><ul>299</ul></div>
+            <div class='gen_record' id="second_place">
+                <ul>
+                    <li class="name">James Jameson</li>
+                    <li class="score">299</li>
+                </ul>
             </div> 
-            <div class='third_record'>
-                <div class="item"><ul>Tom Thompson</ul></div> <div class="score"><ul>113</ul></div>
+            <div class='gen_record' id="third_place">
+                <ul>
+                    <li class="name">Tom Thompson </li>
+                    <li class="score">113</li>
+                </ul>
             </div> 
-            <div class="gen_record">
-                <div class="item"><ul>Jack Jackson</ul></div> <div class="score"><ul>112</ul></div>
+            <div class="gen_record" id="fourth_place"> 
+                <ul>
+                   <li class="name">Jack Jackson</li>
+                   <li class="score">112</li>
+                </ul>
             </div> 
-            <div class="gen_record">
-                <div class="item"><ul>John Johnson</ul></div> <div class="score"><ul>68</ul></div>
+            <div class="gen_record" id="fifth_place">
+                <ul>
+                    <li class="name">John Johnson</li>
+                    <li class="score">68</li>
+                </ul>
             </div> 
         </div>
+        <div class="footer">
+            <h3>Enter data to be submitted to records</h3>
+            <form id="myForm">
+                <label for="lb_name">Name:</label>
+                <input type="text" name="lb_name" id="lb_name">
+                <label for="score">Score:</label>
+                <input type="text" name="score" id="score">
+                <input type="submit" value="Submit">
+                
+            </form>
+        </div>
+        
     </body>
 </html>
