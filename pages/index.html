@@ -20,31 +20,31 @@
             <h1>Leaderboard</h1>
         </div>
         <div class="container">
-            <div class='gen_record' id="first_place">
+            <div class='gen_record' id="place_1">
                 <ul>
                     <li class="name">Brad Bradley</li>
                     <li class="score">322</li>
                 </ul>
             </div> 
-            <div class='gen_record' id="second_place">
+            <div class='gen_record' id="place_2">
                 <ul>
                     <li class="name">James Jameson</li>
                     <li class="score">299</li>
                 </ul>
             </div> 
-            <div class='gen_record' id="third_place">
+            <div class='gen_record' id="place_3">
                 <ul>
                     <li class="name">Tom Thompson </li>
                     <li class="score">113</li>
                 </ul>
             </div> 
-            <div class="gen_record" id="fourth_place"> 
+            <div class="gen_record" id="place_4"> 
                 <ul>
                    <li class="name">Jack Jackson</li>
                    <li class="score">112</li>
                 </ul>
             </div> 
-            <div class="gen_record" id="fifth_place">
+            <div class="gen_record" id="place_5">
                 <ul>
                     <li class="name">John Johnson</li>
                     <li class="score">68</li>
@@ -53,12 +53,21 @@
         </div>
         <div class="footer">
             <h3>Enter data to be submitted to records</h3>
-            <form id="myForm">
-                <label for="lb_name">Name:</label>
+            <form id="myForm" name="formdata">
+                <!-- <label for="nameCC">text:</label>
+                <input type="text" class="textbox name" name="nameCC" value="name not set">
+                
+                <label for="points">Score:</label>
+                <input type="text" class="textbox numPoints" name="score" id="score">
+
+                <input type="submit" class="btn" value="Add new record" id="submit"> -->
+
+
+                 <label for="lb_name">Name:</label>
                 <input type="text" name="lb_name" id="lb_name">
                 <label for="score">Score:</label>
                 <input type="text" name="score" id="score">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit"> 
                 
             </form>
         </div>

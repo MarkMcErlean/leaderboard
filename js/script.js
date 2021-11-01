@@ -3,17 +3,17 @@ $(document).ready(function(){
     // alert("Please click on the background to display items from the leaderboard.");
     
     $("body").click(function(){
-         $("#first_place").animate({opacity: "100%" } ,500,  function() {
+         $("#place_1").animate({opacity: "100%" } ,500,  function() {
             $("body").click(function(){
-                $("#second_place").animate({opacity: "80%"}, 500 , function() {
+                $("#place_2").animate({opacity: "80%"}, 500 , function() {
                     $("body").click(function(){
-                        $("#third_place").animate({opacity: "80%"} ,500 , function() {
+                        $("#place_3").animate({opacity: "80%"} ,500 , function() {
                             $("body").click(function(){
-                                    $("#fourth_place").animate({opacity: "80%"}, 500, function() {
+                                    $("#place_4").animate({opacity: "80%"}, 500, function() {
                                         $("body").click(function() {
-                                                $("#fifth_place").animate({opacity: "80%"} ,500, function(){
+                                                $("#place_5").animate({opacity: "80%"} ,500, function(){
                                                     $("body").click(function(){
-                                                        $("#sixth_place").animate({opacity: "80%"} ,500)
+                                                        $("#place_6").animate({opacity: "80%"} ,500)
                                                     });
                                                 });
                                         });
@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     $(".error").hide();
 
-    $('#myForm').on('submit',function(evt){
+    $('#myForm').on('submit',function(evt){ //when form is submited function begins
         evt.preventDefault();
         error=false;
         $(".error").hide();
@@ -53,7 +53,7 @@ $(document).ready(function(){
             console.log("Data is being added" + score);
             item = $('div.gen_record').length+1;
             console.log("DIV Length: " + item);
-            $(".container").append('<div class="gen_record" id="sixth_place"' /* +item */ + name + " " + score +'</div>');
+            $(".container").append('<div class="gen_record" id="place_'+item+'"><ul> <li class="name">' + name + '</li><li class="score">'+ score +'</li></div>');
         };
         
 

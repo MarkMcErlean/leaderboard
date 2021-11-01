@@ -53,7 +53,7 @@ li{
 }
 
 
-#first_place{
+#place_1{
   background-color:gold; /* Gold */
   opacity: 0%;
   font-size: 20px;
@@ -61,12 +61,12 @@ li{
 }
 
 
-#second_place{
+#place_2{
   background-color: silver; /* silver */
   
 }
 
-#third_place{
+#place_3{
   background-color: #cd7f32; /* Bronze */
   
 }
