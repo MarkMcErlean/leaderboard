@@ -26,41 +26,34 @@ $(document).ready(function(){
     });
 });
 
-    $(".error").hide();
+    // $(".error").hide(); 
 
-    $('#myForm').on('submit',function(evt){ //when form is submited function begins
-        evt.preventDefault();
-        error=false;
+    $('#LeaderboardForm').on('submit',function(evt){ //when form is submited function begins
+        evt.preventDefault(); //prevents default event from being called
+        error=false; //when error is false
         $(".error").hide();
 
-        var score = $("#score").val();
-        var name = $("#lb_name").val();
+        var votes = $("#votes").val();  //defining a variable of votes with the votes id
+        var name = $("#lb_name").val(); //defining variable name with name id
         // 
-        if(name.length < 4)
+        if(name.length < 6) //validating name 
         {
-            $("#err_name").show();
+            error=true;     //if the name is shorter than 4 characters, error is true
+        }
+        if  (votes < 0 || votes > 68) //if the score is less than 0 or more than 
+                                      // 68, error will be true
+        {
             error=true;
         }
-        if  (score < 0 || score > 99)
-        {
-            $("#err_score").show();
-            error=true;
-        }
-        if (error)
-        alert("There is a problem! sorry!");
-        else{
-            $("#newInfo").hide();
-            console.log("Data is being added" + score);
-            item = $('div.gen_record').length+1;
-            console.log("DIV Length: " + item);
-            $(".container").append('<div class="gen_record" id="place_'+item+'"><ul> <li class="name">' + name + '</li><li class="score">'+ score +'</li></div>');
+        if (error) //if error is true, display an error message to instruct the user
+        alert("There is a problem with your inputs - Ensure that you have entered the full name and a votes smaller than the bottom votes");
+        else{   
+             //logging changes
+            item = $('div.gen_record').length+1;          //logging changes
+            $(".container").append('<div class="gen_record" id="place_'+item+'"><ul> <li>'+item+'th Place</li> <li class="name">' + name + '</li><li class="votes">'+ votes +'</li></div>');
         };
         
 
-        $("#addInfo").click(function(event){
-            event.stopImmediatePropagation();
-            $("#newInfo").toggle(1000);
-            $("#lb_name").focus();
-        });
+       
     });
 });

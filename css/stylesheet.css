@@ -32,8 +32,6 @@ li{
   display: inline-flex;
   padding-left: 10%;
 }
-
-
 .gen_record {
   background-color: cadetblue ;
   opacity: 0%;
@@ -51,26 +49,18 @@ li{
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   transform: skewX(-10deg);
 }
-
-
 #place_1{
   background-color:gold; /* Gold */
   opacity: 0%;
   font-size: 20px;
   font-weight: bolder;
 }
-
-
 #place_2{
   background-color: silver; /* silver */
-  
 }
-
 #place_3{
   background-color: #cd7f32; /* Bronze */
-  
 }
-
 .footer{
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: cadetblue;
@@ -82,7 +72,6 @@ li{
   background-image: linear-gradient(to top right,yellow, cadetblue);
   height: 100px;
 }
-
 #myForm{
   /* text-align: center; */
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
