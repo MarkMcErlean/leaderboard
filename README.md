@@ -6,7 +6,7 @@ Coding will be marked on the JQuery rather than javascript
 things to add:
  must have five records at a minimum
  1st place should be highlighted
- (maybe use ID for first, second and third place then generic item ID for further records)
+ (maybe use ID for first, second and third place then generic record_no ID for further records)
  reveal data by clicking on background image - each click is the next row
  option to add additional data through user input
 

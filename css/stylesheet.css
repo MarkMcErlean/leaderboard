@@ -1,6 +1,10 @@
+/* Character encoding */
+/* site designed for 1920x1080p resolution monitors*/
+@charset "UTF-8";
+
 .container {
   padding: 20px;
-  text-align: center;
+  text-align:center ;  
   min-height: 67vh; 
 }
 
@@ -12,17 +16,20 @@
   text-align: center;
   text-decoration: none;
   display:inline-flexbox;
-  background-image: linear-gradient(to bottom right,yellow, cadetblue);
-  
+  background-image: linear-gradient(to bottom right, skyblue, white, skyblue, grey);
+  opacity:90%
 }
 
 body {
-  background: url("../images/background-min.jpg"); /*  61% of original file size */
+  background: url("../images/background-min.png"); /* 52% smaller than original */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
+  font-size: 62.5%;
 }
+
+/* Styling the layout of each record */
 ul{
   transform: skewX(10deg);
 }
@@ -30,11 +37,13 @@ ul{
 li{
   list-style: none;
   display: inline-flex;
-  padding-left: 10%;
-  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.6em;
 }
+
 .gen_record {
-  background-color: cadetblue ;
+  background-color: skyblue ;
   opacity: 0%;
   border: 2px;
   border-style:solid;
@@ -45,14 +54,12 @@ li{
   width: 50%;
   text-decoration: none;
   display: block;
-  font-size: 16px; 
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   transform: skewX(-10deg);
 }
 #place_1{
   background-color:gold; /* Gold */
   opacity: 0%;
-  /* font-size: 20px; */
   font-weight: bolder;
 }
 #place_2{
@@ -61,27 +68,47 @@ li{
 #place_3{
   background-color: #cd7f32; /* Bronze */
 }
+
+/* Styling the lower half of the page */
 .footer{
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   background-color: cadetblue;
-  padding: 15px;
+  padding: 1.4em;
   margin: 0 auto;
   text-decoration: none;
   text-align: center;
   display:block; 
-  background-image: linear-gradient(to top right,yellow, cadetblue);
+  background-image: linear-gradient(to top right,skyblue, white, skyblue, grey);
   height: 100px;
+  opacity: 90%;
+}
+
+.footer h3{
+  font-size: 1.5em;
 }
 #myForm{
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.0em;
 }
+.labels{
+  font-size: 1.3em;
+}
+/*button styling */
 .font_sizing{
-  background-color: cadetblue;
-  /* border: black; */
+  background-color: black;
   border-radius: 20px;
   color: white;
   padding: 10px 10px;
-  font-size: 20px;
+  font-size: 1.9em;
   margin: 2px 1px;
   
+}
+
+.submit_button{
+  background-color: cadetblue;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 5px;
+  font-size: 1.6em;
+  margin: 2px 1px;
 }
