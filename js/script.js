@@ -67,8 +67,9 @@ $(document).ready(function(){
             record_no = $('div.gen_record').length+1; // counts the number of records and adds one
             $(".container").append('<div class="gen_record" id="place_'+record_no+'"><ul> <li class="placing">'+record_no+'th Place</li> <li class="name">' + name + '</li><li class="votes">'+ votes +'</li></div>');
         };
-        
-
-       
+    });
+    $("#showForm").click(function(){
+        $(".footer").toggle(1000);
+        $("#lb_name").focus();
     });
 });

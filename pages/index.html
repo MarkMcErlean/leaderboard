@@ -23,6 +23,7 @@
             <input type="button" class ="font_sizing" value="Decrease Font Size" id="smaller">
             <input type="button" class ="font_sizing" value="Increase Font Size" id="larger">
             <input type="button" class ="font_sizing" value="Undo Font Changes" id="undo"> 
+            <button type="button" id="showForm" value="showForm">Click here to add a new record</button>
         </div>
         <div class="container">
             <div class='gen_record' id="place_1">
@@ -60,14 +61,15 @@
                     <li class="votes">68</li>
                 </ul>
             </div> 
+            
         </div> <!-- end of container class -->
 
         <!-- Creating the bottom section of the page -->
         <!-- Form will be included here to allow adding of additional records -->
+        
         <div class="footer">
             <h3>Enter data to be submitted to records</h3>
             <form id="LeaderboardForm" name="formdata">
-
                 <label for="lb_name" class="labels">Name:</label>
                 <input type="text" name="lb_name" id="lb_name">
                 <label for="votes" class="labels">Votes:</label>

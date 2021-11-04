@@ -77,16 +77,16 @@ li{
   margin: 0 auto;
   text-decoration: none;
   text-align: center;
-  display:block; 
   background-image: linear-gradient(to top right,skyblue, white, skyblue, grey);
   height: 100px;
   opacity: 90%;
+  display:none; 
 }
 
 .footer h3{
   font-size: 1.5em;
 }
-#myForm{
+#LeaderboardForm{
   font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.0em;
 }
@@ -110,5 +110,14 @@ li{
   color: white;
   padding: 5px 5px;
   font-size: 1.6em;
+  margin: 2px 1px;
+}
+
+#showForm{
+  background-color: green;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 10px;
+  font-size: 1.9em;
   margin: 2px 1px;
 }
